@@ -92,19 +92,17 @@ calc.divide(25,5)
 
 
 function remainder(x,y){
-  let re = x % y
-  console.log(x + 'を' + y + 'で割った余りは' + re + 'です。')
-  return re
+  return x % y;
 }
-remainder(5,3)
+const re = remainder(5,3)
+console.log('5を3で割った余りは' + re + 'です。')
 
 
 // 関数の中で変数を定義していてスコープ外からだと参照できないから
+// { から } までがスコープ内です
 
 
-
-let random = Math.random();
-console.log(random);
+console.log(Math.floor(Math.random() * 10));
 
 
 function Timeout(){
